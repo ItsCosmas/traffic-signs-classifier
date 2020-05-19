@@ -1,0 +1,19 @@
+# environment
+/env
+# My Env
+/traffic-env
+
+# static
+/static
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+/__pycache__
+/*/__pycache__
+
+# VS Code Config Folder
+/.vscode
+
+#Jetbrains IDE'S
+/.idea

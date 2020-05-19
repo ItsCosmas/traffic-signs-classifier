@@ -1,0 +1,96 @@
+// ----------------- Variables --------------------------- //
+:root {
+	--color-black: #000;
+	--color-white: #fff;
+}
+// --------------------- animations -------------------------- //
+// --------------- utilities ---------------------------------------- //
+.u-center-text {
+	text-align: center !important;
+}
+
+.u-margin-bottom-big {
+	margin-bottom: 8rem !important;
+}
+
+.u-margin-bottom-medium {
+	margin-bottom: 4rem !important;
+}
+
+.u-margin-bottom-small {
+	margin-bottom: 1.5rem !important;
+}
+
+.u-margin-top-small {
+	margin-top: 1.5rem !important;
+}
+
+.u-margin-top-medium {
+	margin-top: 4rem !important;
+}
+
+.u-margin-top-big {
+	margin-top: 8rem !important;
+}
+
+.u-margin-top-huge {
+	margin-top: 10rem !important;
+}
+// ------------------------ base -------------------------------------- //
+html {
+	font-size: 62.5%; // 1rem = 10px
+}
+// ---------------------- typography ---------------------------------- //
+.heading {
+	&--main {
+		font-weight: 700;
+		line-height: 1.2;
+		letter-spacing: 0.5rem;
+		font-size: 2.5rem;
+		@media only screen and (max-width: 48em) {
+			line-height: 1.2;
+			letter-spacing: 0.2rem;
+			font-size: 2rem;
+		}
+	}
+}
+.text {
+	font-size: 1.6rem;
+	&--bold {
+		font-weight: 600;
+	}
+	&--grey {
+		color: #231f20;
+	}
+	&--black {
+		color: var(--color-black);
+	}
+	&--white {
+		color: var(--color-white);
+	}
+}
+// --------------------- components ------------------------- //
+.jumbotron {
+	padding: 4rem;
+	@media only screen and (max-width: 48em) {
+		padding: 2rem 1rem;
+	}
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 20vh;
+	background-color: #15202b;
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 2rem;
+
+	a {
+		text-decoration: none;
+	}
+}

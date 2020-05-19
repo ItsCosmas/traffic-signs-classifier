@@ -1,0 +1,122 @@
+// Responsive Image
+@mixin ResponsiveImage {
+	width: 100%;
+	height: auto;
+}
+
+// Classifier CSS
+.classifier {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 40vh;
+
+	padding: 4rem;
+
+	@media only screen and (max-width: 48em) {
+		padding: 2rem 0rem;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@media only screen and (max-width: 48em) {
+			min-width: 90%;
+		}
+
+		input,
+		textarea {
+			font-size: 1.5rem;
+			font-family: inherit;
+			color: inherit;
+			padding: 1.5rem 2rem;
+			border: 1px solid #ddd;
+			width: 100%;
+			display: block;
+			transition: all 0.3s;
+
+			@media only screen and (max-width: 48em) {
+				padding: 1.5rem 0.5rem;
+			}
+
+			&:focus {
+				outline: none;
+				background-color: #f0eeee;
+				box-shadow: 0 1rem 2rem rgba(var(--color-black), 0.1);
+				border-bottom: 3px solid #49bf4c;
+			}
+
+			&:focus:invalid {
+				border-bottom: 3px solid #9fd220;
+			}
+
+			&::-webkit-input-placeholder {
+				font-weight: 600;
+				color: #aaa;
+			}
+		}
+
+		label {
+			font-size: 1.4rem;
+			font-weight: 700;
+			margin-bottom: 1rem;
+			transition: all 0.3s;
+		}
+	}
+}
+.preview-image {
+	display: flex;
+	justify-content: center;
+	img {
+		@include ResponsiveImage();
+	}
+}
+
+.fileInput[type='file'] {
+	display: none;
+}
+.customFileInput {
+	background: #ccc;
+	font-size: 1.5rem;
+	font-family: inherit;
+	color: inherit;
+	padding: 1.5rem 2rem;
+	border: 1px solid #ddd;
+	width: 100%;
+	display: block;
+	transition: all 0.3s;
+	cursor: pointer;
+
+	@media only screen and (max-width: 48em) {
+		padding: 1.5rem 1rem;
+	}
+
+	display: flex;
+	align-items: center;
+	font-size: 2rem;
+
+	&--icon {
+		width: 2rem;
+		height: 2rem;
+		margin-right: 20px;
+		fill: currentColor;
+	}
+}
+
+.separator {
+	font-size: 1.6rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.result {
+	background-color: #ccc;
+	padding: 1rem 3rem;
+	font-size: 1.5rem;
+	@media only screen and (max-width: 48em) {
+		min-width: 90%;
+		padding: 1rem;
+	}
+}
