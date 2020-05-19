@@ -16,6 +16,9 @@ The Source Code used to train the Model is available here: https://github.com/It
 
 ## API ENDPOINTS
 
+-   Production URL - https://damp-lake-03654.herokuapp.com
+-   Development URL - http://0.0.0.0:5000
+
 ### - `/classifier/` - accepts `file`.
 
 -   Example
