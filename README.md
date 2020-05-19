@@ -16,7 +16,7 @@ The Source Code used to train the Model is available here: https://github.com/It
 
 ## API ENDPOINTS
 
-### - `/classifier/` - accepts file.
+### - `/classifier/` - accepts `file`.
 
 -   Example
 
@@ -46,7 +46,7 @@ fetch("http://0.0.0.0:5000/classifier/", requestOptions)
   .catch(error => console.log('error', error));
 ```
 
-### - `/networkimg/` - accepts a `Content-Type: application/json` object containing an image url.
+### - `/networkimg/` - accepts a `JSON` object containing an image url.
 
 -   Example Request
 
