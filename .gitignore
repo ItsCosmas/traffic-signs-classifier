@@ -19,7 +19,3 @@ __pycache__/
 /.idea
 # Local Netlify folder
 .netlify
-
-# Firebase
-.firebaserc
-firebase.json
