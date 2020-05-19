@@ -3,11 +3,11 @@
 -   This code demonstrates how to deploy a Keras Model to Production.
 -   Its Subdivided into two main parts:
 
-1. Backend - Traffic Signs Classifier as RESTFul Service
+1. Backend - Traffic Signs Classifier as RESTful Service
 
     - Python Source Code in Root `./`
 
-2. Frontend - Consuming the RESTFul service from a web app(react app).
+2. Frontend - Consuming the RESTful service from a web app(react app).
     - React Source Code in Client Directory `./client`
 
 The trained model is available as a `.h5` file name `my_model.h5`
