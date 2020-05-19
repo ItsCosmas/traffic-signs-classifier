@@ -17,3 +17,9 @@ __pycache__/
 
 #Jetbrains IDE'S
 /.idea
+# Local Netlify folder
+.netlify
+
+# Firebase
+.firebaserc
+firebase.json
